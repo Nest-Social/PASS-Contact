@@ -1,0 +1,235 @@
+[
+  {
+    "inputs": [],
+    "name": "MIN_PRICE",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "view",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "startingCirculation",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "m",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "c",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "numItems",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "feeMultiplier",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "protocolFeeMultiplier",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "dividendFeeMultiplier",
+        "type": "uint256"
+      }
+    ],
+    "name": "getBuyInfo",
+    "outputs": [
+      {
+        "internalType": "enum ICurve.Error",
+        "name": "error",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "inputValue",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tradeFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "protocolFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "dividendFee",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "startingCirculation",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "m",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "c",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "numItems",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "feeMultiplier",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "protocolFeeMultiplier",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "dividendFeeMultiplier",
+        "type": "uint256"
+      }
+    ],
+    "name": "getSellInfo",
+    "outputs": [
+      {
+        "internalType": "enum ICurve.Error",
+        "name": "error",
+        "type": "uint8"
+      },
+      {
+        "internalType": "uint256",
+        "name": "outputValue",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "tradeFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "protocolFee",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "dividendFee",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "currentCirculation",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "m",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "c",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "totalFeeMultiplier",
+        "type": "uint256"
+      }
+    ],
+    "name": "getSellPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "sellPrice",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "currentCirculation",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "m",
+        "type": "uint256"
+      },
+      {
+        "internalType": "uint256",
+        "name": "c",
+        "type": "uint256"
+      }
+    ],
+    "name": "getSpotPrice",
+    "outputs": [
+      {
+        "internalType": "uint256",
+        "name": "spotPrice",
+        "type": "uint256"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  },
+  {
+    "inputs": [
+      {
+        "internalType": "uint256",
+        "name": "spotPrice",
+        "type": "uint256"
+      }
+    ],
+    "name": "validateSpotPrice",
+    "outputs": [
+      {
+        "internalType": "bool",
+        "name": "",
+        "type": "bool"
+      }
+    ],
+    "stateMutability": "pure",
+    "type": "function"
+  }
+]
